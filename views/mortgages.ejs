@@ -1,0 +1,189 @@
+<% include partials/header %>
+<% include partials/nav %>
+<main class="page-background buying">
+    <div class="container pannel">
+        <div class = "container">
+            <div class="row">
+                <div class="col s12">
+                    <h2>
+                       Mortgages
+                    </h2>
+                    <hr>
+                    <p>
+                        <img src="assets/images/mortgage.jpg">
+                        If you're like most buyers, a home is the most expensive purchase you'll ever make, and you'll probably need some form of financing.
+                        There are many lending institutions that offer a variety of mortgage products. Financing options and rates can vary widely, so it is
+                        important to do your research and shop around to ensure you get the mortgage that best meets your needs at the best price.
+                        I would be happy to refer you to some very good mortgage contacts I have in the Southeast Valley, or to help you in any other way
+                        I can to secure the best possible rate for your home purchase.
+                    </p>
+                    <hr>
+                    <p>Here are a couple mortage calculators to assist you in making some decisions around financing your new home.</p>
+                    <div id="results"></div>
+                    <ul class="collapsible popout" data-collapsible="accordion">
+                        <li>
+                          <div class="collapsible-header"><i class="material-icons">home</i>Mortgage Qualification Calculator</div>
+                          <div class="collapsible-body">
+                              <div>
+                                  <div class="row">
+                                    <form class="col s12">
+                                        <h6 class="center-align">Monthly Income</h6>
+                                        <div class="row">
+                                            <div class="input-field col s12 m6">
+                                              <input placeholder="Pre-tax income (salary)" id="pretax" type="number" min="0" class="validate">
+                                            </div>
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder="Self-employment income" id="self" type="number" min="0" class="validate">
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder="Second Job" id="second" type="number" min="0" class="validate">
+                                        </div>
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder="Dividends" id="div" type="number" min="0" class="validate">
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder="Interest" id="interest" type="number" min="0" class="validate">
+                                        </div>
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder="Pension" id="pen" type="number" min="0" class="validate">
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder="Social Security" id="social" type="number" min="0" class="validate">
+                                        </div>
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder="Rental Income" id="rental" type="number" min="0" class="validate">
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder="Child Support" id="child" type="number" min="0" class="validate">
+                                        </div>
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder="Other" id="otherInc" type="number" min="0" class="validate">
+                                        </div>
+                                      </div>
+                                      <h6 class="center-align">Monthly Expenses</h6>
+                                      <div class="row">
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder="Car Payment" id="car" type="number" min="0" class="validate">
+                                        </div>
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder="Furniture Loan" id="furniture" type="number" min="0" class="validate">
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder="Appliances" id="appliances" type="number" min="0" class="validate">
+                                        </div>
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder="Boat or RV Loan" id="boat" type="number" min="0" class="validate">
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder="Credit Cards and Similar Debts" id="cards" type="number" min="0" class="validate">
+                                        </div>
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder="Student Loans" id="student" type="number" min="0" class="validate">
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="input-field col s12 m6">
+                                          <input placeholder = "Other Payments" id="otherExp" type="number" min="0" class="validate">
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="input-field col s6 offset-s3">
+                                            <h6 class="center-align">Pre-qualification Ratio <i id="mort-tip" class="material-icons">help_outline</i></h6>
+                                            <select id="ratio">
+                                              <option value="" disabled selected>Choose your ratio</option>
+                                              <option value="1" >28/36</option>
+                                              <option value="2">29/41</option>
+                                            </select>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="center-align">
+                                              <button id = "mortCalc" type="button" class="btn waves-effect waves-light center-align">Calculate
+                                                <i class="material-icons right">settings</i>
+                                              </button>
+                                              <div id="qualError" class="center-align"></div>
+                                              <div id="qualResult" class="center-align"></div>
+                                          </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="collapsible-header"><i class="material-icons">date_range</i>Mortgage Payment Calculator</div>
+                          <div class="collapsible-body">
+                            <h6 class="center-align">Payment Calculator</h6>
+                              <div class="row">
+                                    <form class="col s12">
+                                      <div class="row">
+                                        <div class="input-field col s8 offset-s2">
+                                          <input placeholder="Purchase Price" id="price" type="number" min="0" class="validate">
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="input-field col s8 offset-s2">
+                                          <input placeholder="Down Payment" id="down" type="number" min="0" class="validate">
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="input-field col s8 offset-s2">
+                                          <input placeholder="Interest Rate Percentage" id="rate" type="number" min="1" max="100"class="validate">
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                          <select id="term" class = "col s8 offset-s2">
+                                              <option value="" disabled selected>Mortgage Term</option>
+                                              <option value="30">30 years</option>
+                                              <option value="25">25 years</option>
+                                              <option value="20">20 years</option>
+                                              <option value="15">15 years</option>
+                                              <option value="10">10 years</option>
+                                              <option value="5">5 years</option>
+                                          </select>
+                                     </div>
+                                      <div class="row">
+                                        <div class="input-field col s8 offset-s2">
+                                          <input placeholder="Annual Property Taxes" id="taxes" type="number" min="0" class="validate">
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="input-field col s8 offset-s2">
+                                          <input placeholder="Annual Insurance Premium" id="insurance" type="number" min="0" class="validate">
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="center-align">
+                                              <button id="paymentCalc" type="button" class="btn waves-effect waves-light center-align">Calculate
+                                                <i class="material-icons right">settings</i>
+                                              </button>
+                                              <div id="calcError" class="center-align"></div>
+                                              <div id="calcResult" class="center-align"></div>
+                                          </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                          </div>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="js/qualCalc.js"></script>
+<script src="js/paymentCalc.js"></script>
+<script src="js/tooltips.js"></script>
+<% include partials/footer %>

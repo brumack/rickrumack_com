@@ -1,0 +1,39 @@
+<% include partials/header %>
+<% include partials/nav %>
+<main class="page-background buying">
+    <div class="container pannel">
+        <h1 class="center-align">Contact Me</h1>
+        <div class="row">
+            <form class="col s8 offset-s2" action="/contact" method="POST">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="first_name" name="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="input-field col s12">
+                  <input id="last_name" name="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+            </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" name="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" name="message" class="materialize-textarea"></textarea>
+                  <label for="textarea1">How can I help?</label>
+                </div>
+              </div>
+              <button class="btn waves-effect waves-light center-align" type="submit">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </form>
+          </div>
+    </div>
+</main>
+<% include partials/footer %>

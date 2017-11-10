@@ -1,0 +1,469 @@
+/* resets */
+.row .col {
+margin:0;
+padding:0;
+}
+
+/* Globals */
+
+body {
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
+
+main {
+flex: 1 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+}
+
+p, li {
+    font-family: 'Raleway';
+}
+
+form i {
+    font-size: .8em;
+    text-align:right;
+}
+
+form h6 {
+    margin-bottom: 20px;
+}
+
+form .btn {
+    display:block;
+    margin: 0 auto;
+}
+
+.btn, .btn:focus, .btn:active, .btn:visited {
+    background-color:#D27442;
+}
+
+.btn:hover {
+    background-color:#002A41;
+}
+
+/* --- Form Styling --- */
+
+ /* label color */
+.input-field label {
+ color: #D27442;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+ color: #D27442;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid #D27442;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type=text].valid {
+ border-bottom: 1px solid #000;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+ border-bottom: 1px solid red;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+ color: #000;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), 
+input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), 
+input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), 
+input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), 
+input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), 
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom-color: #D27442;
+    box-shadow: 0 1px 0 0 #D27442;
+}
+
+input.valid:not([type]), input.valid:not([type]):focus, input[type=text].valid:not(.browser-default), input[type=text].valid:not(.browser-default):focus,
+input[type=password].valid:not(.browser-default), input[type=password].valid:not(.browser-default):focus, input[type=email].valid:not(.browser-default),
+input[type=email].valid:not(.browser-default):focus, input[type=url].valid:not(.browser-default), input[type=url].valid:not(.browser-default):focus,
+input[type=time].valid:not(.browser-default), input[type=time].valid:not(.browser-default):focus, input[type=date].valid:not(.browser-default),
+input[type=date].valid:not(.browser-default):focus, input[type=datetime].valid:not(.browser-default), input[type=datetime].valid:not(.browser-default):focus,
+input[type=datetime-local].valid:not(.browser-default), input[type=datetime-local].valid:not(.browser-default):focus, input[type=tel].valid:not(.browser-default),
+input[type=tel].valid:not(.browser-default):focus, input[type=number].valid:not(.browser-default), input[type=number].valid:not(.browser-default):focus,
+input[type=search].valid:not(.browser-default), input[type=search].valid:not(.browser-default):focus, textarea.materialize-textarea.valid,
+textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dropdown {
+    border-bottom: #D27442 !important;
+    box-shadow: 0 1px 0 0 #D27442 !important;;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+    color: #D27442;
+}
+
+label.active {
+    color: #D27442 !important;
+}
+
+/* nav styling */
+
+nav {
+background-color:#F1F1F1;
+z-index:1000;
+}
+
+nav ul a {
+color:#002A42;
+font-family:'Montserrat';
+}
+
+.dropdown-content li>a{
+color:#D27442;
+}
+
+.dropdown-content.active{
+width:200px !important;
+}
+
+.headshot {
+height:3.5em;
+margin:.3em 0 .3em 0;
+}
+
+.brand-logo {
+height:1.91em;
+}
+
+/* --- global page styling --- */
+
+.page-background {
+    background-color:#D27442;
+}
+
+.pannel {
+    background-color:#fff;
+    margin-top:4vh;
+    margin-bottom: 4vh;
+    padding: 4vh;
+}
+
+/* ---  home page ---  */
+
+.hero {
+height:94vh;
+background:url('/assets/images/hero.png');
+background-size: cover;
+background-repeat:no-repeat;
+background-position: center;
+}
+
+.headline-box {
+background-color:rgba(255,255,255,.2);
+text-align:center;
+margin: 0 auto;
+}
+
+.headline-box h2 {
+font-family:'Yesteryear';
+font-size: 5vw;
+font-weight:400;
+color:#F1F1F1;
+text-shadow: 4px 4px #000000;
+margin:1vw 0 0 0;
+}
+
+.headline-box h1 {
+font-family:'Montserrat';
+font-size: 6.5vw;
+color:#D27442;
+text-shadow: 3px 3px #000000;
+margin:0 15vw 1vw 15vw;
+}
+
+.headline-box h4 {
+font-family:'Allura';
+font-size:3vw;
+margin:0 0 1vw 0;
+}
+
+.headline-box a {
+font-family:'Montserrat';
+background-color:#D27442;
+margin-bottom:1vw;
+}
+
+.headline-box a:hover {
+background-color:#000000;
+}
+
+/* --- MLS Search Page --- */
+
+.mlsiframe {
+    height: 105vh;
+    width: 100vw;
+    position: relative;
+    top:-105px;
+    background:transparent;
+  }
+  
+  .preloader-wrapper {
+      position:absolute;
+      top:50vh;
+      left:45vw;
+      z-index:-1;
+  }
+  
+/* --- Buying Page --- */
+
+.buying img {
+    width:30vh;
+    float:right;
+    margin:5px;
+}
+
+.collapsible {
+    margin-top: 20px;
+}
+
+.buying .collapsible-header {
+    font-family: 'Roboto';
+}
+
+.buying span {
+    font-family: 'Raleway'; 
+    
+}
+
+.collapsible .collection {
+    margin-top:20px;
+}
+
+.collapsible .collection li {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.tip {
+    margin: 20px;
+}
+
+.tip li {
+    padding: 3px 40px;
+}
+
+.tip li i {
+    margin: 10px 5px 0 0;
+    padding: 0;
+    font-size:15px;
+}
+
+.tip span {
+    color:#D27442;
+}
+
+.material-tooltip {
+    width:50%;
+}
+
+.material-tooltip hr {
+    margin:20px;
+}
+
+.material-tooltip p {
+    line-height: 1.2em;
+}
+
+/* --- Selling Page --- */
+
+.selling img {
+    width:35%;
+    float:right;
+}
+
+/* --- Mortgage Page --- */
+
+#mort-tip {
+    font-size: .9em;
+    color:blue;
+}
+
+#qualError p, #calcError p {
+    color:red;
+    text-align:center;
+}
+
+#qualResult table, #calcResult table {
+    margin-top: 80px;
+    width: 66%;
+    margin: 0 auto;
+}
+
+#qualResult table tr, #calcResult table tr {
+    border-bottom: black solid 1px;
+}
+/* --- Shortsale Page --- */
+
+.shortsale h2 {
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* --- About Page --- */
+
+.container .about {
+    width:90%;
+}
+
+.profile {
+border-radius:50%;
+width:30%;
+}
+
+.about img {
+    float:left;
+    margin-right:50px;
+}
+
+.bio {
+    float:left;
+}
+
+
+/* --- current market page ---  */
+
+.carousel {
+height:100%;
+}
+
+/* -----Contact Page ----- */
+
+
+/* --- testimonials page --- */
+
+.reviews h1 {
+    color: white;
+    text-align:center;
+    font-family:'Allura';
+    font-size:6em;
+}
+
+.reviews h5 {
+    color: white;
+    font-family: 'Raleway';
+    font-weight:bold;
+    text-align: center;
+}
+
+.reviews .video {
+    margin: 20px;
+}
+
+.review {
+    width:70%;
+    border-radius:10px;
+    font-family: 'Helvetica Neue';
+     background-color: rgba(235,232,239, 1)
+
+}
+
+.card .card-action {
+    padding: 5px 10px;
+}
+
+/* --- footer --- */
+
+.page-footer {
+    padding:0;
+    background-color: #D27442;
+}
+
+.copywrite {
+    width:50%;
+    float:left;
+}
+
+.icons {
+    text-align:right;
+    width:50%;
+    float:right;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+/* --- MOBILE STYLING --- */
+
+@media screen and (max-width:600px) {
+    .headline-box h2 {
+        font-size: 12vw;
+    }
+    
+    .headline-box h1 {
+        font-size:14vw;
+    }
+    
+    .headline-box h4 {
+        font-size:8vw;
+    }
+}
+
+
+/* --- Form Styling --- */
+
+ /* label color */
+   .input-field label {
+     color: #D27442;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #D27442;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #D27442;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid red;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+
+
+
+
+
+
+
+
