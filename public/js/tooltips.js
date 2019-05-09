@@ -9,16 +9,16 @@ $(document).ready(function(){
 
 $('#type').tooltip({delay: 50, html:true, position:'top', tooltip:'<p class="tip">There are several forms of home ownership:<hr>' +
                                                                     '<ul class="left-align tip">' +
-                                                                    '<li><span>Single-family homes:</span> One home per lot.</li>' +
-                                                                    '<li><span>Multiple-family homes:</span> Some buyers, particularly first-timers,' +
+                                                                    '<li><span>Single-family homes</span><br> One home per lot.</li>' +
+                                                                    '<li><span>Multiple-family homes</span><br> Some buyers, particularly first-timers,' +
                                                                     'start with multiple-family dwellings, so they\'ll have rental income to help with their' +
                                                                     'costs. Many mortgage plans, including VA and FHA loans, can be used for buildings with up to' +
                                                                     'four units, if the buyer intends to occupy one of them.</li>' +
-                                                                    '<li><span>Condominiums:</span> With a condo, you own "from the plaster in."' +
+                                                                    '<li><span>Condominiums</span><br>With a condo, you own "from the plaster in."' +
                                                                     'You also own a certain percentage of the "common elements" - staircases, sidewalks,' +
                                                                     'roofs, etc. Monthly charges pay your share of taxes and insurance on those elements,' +
                                                                     'as well as repairs and maintenance. A homeowner’s association administers the development.</li>' +
-                                                                    '<li><span>Co-ops:</span> In some cities, cooperative apartments are common. With co-ops,' +
+                                                                    '<li><span>Co-ops</span><br> In some cities, cooperative apartments are common. With co-ops,' +
                                                                     'you purchase shares in a corporation that owns the whole building, and you receive a lease to' +
                                                                     'your own unit. A board of directors, comprised of owners and elected by owners, supervises the' +
                                                                     'building management. Monthly charges include your share of an overall mortgage on the building.</li>' +
