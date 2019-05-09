@@ -380,8 +380,7 @@ nav ul a {
 
 .about img {
 	float: left;
-	margin-right: 50px;
-	margin-bottom: 20px;
+	margin: 20px;
 }
 
 .bio {
@@ -454,6 +453,9 @@ nav ul a {
 /* --- MOBILE STYLING --- */
 
 @media screen and (max-width: 600px) {
+	h2 {
+		font-size: 3rem;
+	}
 	.headline-box h2 {
 		font-size: 12vw;
 	}
@@ -469,6 +471,12 @@ nav ul a {
 	.material-tooltip {
 		display: none !important;
 		visibility: hidden !important;
+	}
+
+	.about img {
+		width: 100%;
+		margin: 0 0 10px 0;
+		text-align: center;
 	}
 }
 
